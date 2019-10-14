@@ -5,7 +5,7 @@ public abstract class Product implements Item {
   //int id;
   String name;
   String manufacturer;
-  static String type;
+  ItemType type;
 
   /*
   public int getId(){
@@ -28,7 +28,7 @@ public abstract class Product implements Item {
     this.manufacturer = mnfct;
   }
 
-  Product(String nm, String mnfct, String tp) {
+  Product(String nm, String mnfct, ItemType tp) {
     this.name = nm;
     this.manufacturer = mnfct;
     this.type = tp;
@@ -43,7 +43,7 @@ public abstract class Product implements Item {
 
 class Widget extends Product {
 
-  Widget(String name, String manufacturer, String type) {
+  Widget(String name, String manufacturer, ItemType type) {
     super(name, manufacturer, type);
   }
 }
