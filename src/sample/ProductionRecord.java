@@ -11,6 +11,10 @@ public class ProductionRecord {
 
   public ProductionRecord(int productionNumber, int productID, String serialNumber,
       Date dateProduced) {
+    this.productionNumber = productionNumber;
+    this.productID = productID;
+    this.serialNumber = serialNumber;
+    this.dateProduced = dateProduced;
 
   }
 
@@ -44,5 +48,17 @@ public class ProductionRecord {
 
   public void setProdDate(Date dtProd) {
     this.dateProduced = dtProd;
+  }
+
+  public ProductionRecord(int productIdent) {
+    this.productionNumber = 0;
+    this.productID = productIdent;
+    this.serialNumber = "0";
+    this.dateProduced = new Date();
+  }
+
+  public String toString() {
+    return "Prod. Num: " + productionNumber + " Product ID: " + productID + " Serial Num: "
+        + serialNumber + " Date: " + dateProduced;
   }
 }
