@@ -9,7 +9,8 @@ public class ProductionRecord {
   String serialNumber;
   Date dateProduced;
 
-  public ProductionRecord(int productionNumber, int productID, String serialNumber, Date dateProduced) {
+  public ProductionRecord(int productionNumber, int productID, String serialNumber,
+      Date dateProduced) {
 
   }
 
@@ -20,10 +21,12 @@ public class ProductionRecord {
   public void setProductionNum(int prodNum) {
     this.productionNumber = prodNum;
   }
-  public int getProductID(){
+
+  public int getProductID() {
     return productID;
   }
-  public void setProductID(int prodID){
+
+  public void setProductID(int prodID) {
     this.productID = prodID;
   }
 
