@@ -18,6 +18,12 @@ public class ProductionRecord {
 
   }
 
+  public ProductionRecord(Product productProduced, int i) {
+    //this.serialNumber = "AppAU00000";
+    this.serialNumber = productProduced.manufacturer.substring(0,3) + productProduced.type.code +  String.format("%05d" , i);
+    this.dateProduced = new Date();
+  }
+
   public int getProductionNum() {
     return productionNumber;
   }
